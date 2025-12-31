@@ -1,0 +1,43 @@
+# Build output directories
+build/
+target/
+output/
+
+# Build artifacts
+MANIFEST.MF
+package.sh
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Compiled class files
+*.class
+
+# Package files (keep releases/, ignore others)
+*.jar
+*.war
+*.ear
+!releases/*.jar
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Burp API JAR
+lib/burp-montoya-api.jar
+lib/*.jar
+
+# Debug and iteration documents
+编译*.md
+download-api.sh
