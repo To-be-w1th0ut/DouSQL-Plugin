@@ -689,7 +689,7 @@ public class DouSqlPluginComplete implements BurpExtension, HttpHandler, Context
     private void setupEventListeners() {
         chkbox1.addItemListener(e -> {
             if (chkbox1.isSelected()) {
-                api.logging().logToOutput("插件DouSQL启动");
+                // api.logging().logToOutput("插件DouSQL启动");
                 switchs = 1;
             } else {
                 api.logging().logToOutput("插件DouSQL关闭");
@@ -1322,7 +1322,7 @@ public class DouSqlPluginComplete implements BurpExtension, HttpHandler, Context
                 errorKeywordsList.add(line);
             }
         }
-        api.logging().logToOutput("已更新报错关键字列表，共" + errorKeywordsList.size() + "条");
+                // api.logging().logToOutput("已更新报错关键字列表，共" + errorKeywordsList.size() + "条");
     }
 
     @Override
@@ -1347,11 +1347,11 @@ public class DouSqlPluginComplete implements BurpExtension, HttpHandler, Context
                 } else if (toolType == ToolType.INTRUDER) {
                     toolFlag = 32;
                 } else {
-                    api.logging().logToOutput("未处理的工具类型: " + toolType + ", toolFlag=0");
+                    // api.logging().logToOutput("未处理的工具类型: " + toolType + ", toolFlag=0");
                 }
 
-                api.logging().logToOutput("工具来源: " + toolType + ", toolFlag=" + toolFlag + 
-                                        ", clicksRepeater=" + clicksRepeater + ", clicksProxy=" + clicksProxy);
+                // api.logging().logToOutput("工具来源: " + toolType + ", toolFlag=" + toolFlag + 
+                //                                 ", clicksRepeater=" + clicksRepeater + ", clicksProxy=" + clicksProxy);
 
                 if ((clicksRepeater == 64 && toolFlag == 64) || 
                     (clicksProxy == 4 && toolFlag == 4) ||
